@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
+const PrettierPlugin = require("prettier-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -32,6 +33,7 @@ module.exports = {
       filename: "./index.html",
     }),
     new ESLintPlugin(options),
+    new PrettierPlugin(),
   ],
   devServer: {
     compress: true,
