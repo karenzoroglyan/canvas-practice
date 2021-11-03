@@ -1,0 +1,21 @@
+{
+    "env": {
+        "node": true
+      },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": ["error", "never"],
+        "quotes": ["error", "single"],
+        "no-unused-vars": ["error", { "vars": "local", "args": "after-used", "ignoreRestSiblings": true }],
+        "no-var": ["error"],
+        "eol-last": ["error", "always"],
+        "no-multiple-empty-lines": ["error"],
+        "no-unexpected-multiline": ["error"],
+        "no-undef-init": ["error"]
+    }
+}
+
